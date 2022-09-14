@@ -19,18 +19,22 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CurvedNavigationBar(index: 0, height: 60.0, items: [
-        Icon(Icons.home),
-        Icon(
-          Icons.chat_bubble_outline_outlined,
-        ),
-        Icon(
-          Icons.notifications_outlined,
-        ),
-        Icon(
-          Icons.calendar_month_outlined,
-        ),
-      ]),
+      bottomNavigationBar: CurvedNavigationBar(
+          backgroundColor: Color.fromARGB(255, 223, 244, 255),
+          index: 0,
+          height: 60.0,
+          items: [
+            Icon(Icons.home),
+            Icon(
+              Icons.chat_bubble_outline_outlined,
+            ),
+            Icon(
+              Icons.notifications_outlined,
+            ),
+            Icon(
+              Icons.calendar_month_outlined,
+            ),
+          ]),
       body: SafeArea(
         child: Column(
           children: [
@@ -41,8 +45,10 @@ class _HomepageState extends State<Homepage> {
             // SizedBox(
             //   height: 20,
             // ),
+
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
